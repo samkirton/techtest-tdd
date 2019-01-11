@@ -1,8 +1,8 @@
 package com.worldpay.techtest.api
 
 import android.app.Application
-import com.worldpay.techtest.R
 import com.squareup.moshi.Moshi
+import com.worldpay.techtest.R
 import com.worldpay.techtest.api.payment.PaymentApi
 import dagger.Module
 import dagger.Provides

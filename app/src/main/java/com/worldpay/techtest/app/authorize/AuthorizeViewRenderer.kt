@@ -7,11 +7,19 @@ class AuthorizeViewRenderer @Inject internal constructor() : MxViewRenderer<Auth
     override fun layout(layout: AuthorizeViewLayout, state: AuthorizeViewState): Unit = when (state.view) {
         AuthorizeViewState.View.Idle -> {
         }
-        AuthorizeViewState.View.OnProgress -> {
-            layout.showProgress()
+        is AuthorizeViewState.View.ShowItemDetails -> {
         }
-        AuthorizeViewState.View.OnError -> {
-            layout.showError()
+        AuthorizeViewState.View.ShowCardDetailsForm -> {
+        }
+        AuthorizeViewState.View.ShowAddressDetailsForm -> {
+        }
+        AuthorizeViewState.View.ShowConfirmPayment -> {
+        }
+        AuthorizeViewState.View.OnPaymentInProgress -> {
+        }
+        AuthorizeViewState.View.OnPaymentError -> {
+        }
+        AuthorizeViewState.View.OnPaymentSuccess -> {
         }
     }
 }

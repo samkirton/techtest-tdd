@@ -9,6 +9,7 @@ import com.worldpay.techtest.R
 import com.worldpay.techtest.app.MviFragment
 
 import com.worldpay.techtest.app.ViewModelFactory
+import com.worldpay.techtest.app.authorize.model.ItemDetails
 import dagger.android.support.AndroidSupportInjection
 import io.reactivex.Observable
 import javax.inject.Inject
@@ -31,7 +32,10 @@ class AuthorizeFragment
         AndroidSupportInjection.inject(this)
     }
 
-    override fun intents(): Observable<AuthorizeIntent> = Observable.just(AuthorizeIntent.Init)
+    override fun intents(): Observable<AuthorizeIntent> = Observable.just(
+        AuthorizeIntent.Init(ItemDetails(
+            "", "", ItemDetails.Price("", 0.0)))
+    )
 
     override fun layout(): AuthorizeViewLayout = this
 
@@ -39,10 +43,25 @@ class AuthorizeFragment
 
     override fun render(): AuthorizeViewRenderer = render
 
-    override fun showProgress() {
+    override fun showItemDetails(itemDetails: ItemDetails) {
     }
 
-    override fun showError() {
+    override fun showEnterCardDetailsForm() {
+    }
+
+    override fun showEnterAddressDetailsForm() {
+    }
+
+    override fun showConfirmPaymentForm() {
+    }
+
+    override fun showPaymentProgress() {
+    }
+
+    override fun showPaymentError() {
+    }
+
+    override fun showPaymentSuccess() {
     }
 
     companion object {

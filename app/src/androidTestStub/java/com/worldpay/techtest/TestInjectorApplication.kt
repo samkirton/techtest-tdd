@@ -1,10 +1,10 @@
 package com.worldpay.techtest
 
 import com.worldpay.techtest.api.ApiConfig
-import com.worldpay.techtest.app.AppComponent
-import com.worldpay.techtest.app.BaseInjectorApplication
 import com.worldpay.techtest.api.StubInterceptor
 import com.worldpay.techtest.api.StubScenario
+import com.worldpay.techtest.app.AppComponent
+import com.worldpay.techtest.app.BaseInjectorApplication
 import com.worldpay.techtest.app.DaggerAppComponent
 import dagger.android.AndroidInjector
 import java.util.Arrays.asList

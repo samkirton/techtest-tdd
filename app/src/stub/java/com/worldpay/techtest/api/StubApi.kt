@@ -5,7 +5,6 @@ import com.worldpay.techtest.api.payment.authorize.AuthorizeHandler
 import com.worldpay.techtest.api.payment.cancel.CancelHandler
 import okhttp3.Request
 import okhttp3.Response
-import java.lang.IllegalStateException
 
 class StubApi(
     private val context: Context,
