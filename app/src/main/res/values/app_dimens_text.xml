@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_text_h5">24dp</dimen>
+    <dimen name="app_text_medium">18sp</dimen>
+    <dimen name="app_text_body1">14sp</dimen>
+    <dimen name="app_text_body1_spacing">3sp</dimen>
+</resources>

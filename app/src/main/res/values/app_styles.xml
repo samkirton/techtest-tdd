@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Typography.Body1" parent="@style/Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/app_text_body1</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:lineSpacingExtra">@dimen/app_text_body1_spacing</item>
+    </style>
+
+    <style name="Typography.Medium" parent="@style/Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/app_text_medium</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Typography.H5" parent="@style/Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/app_text_h5</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/app_button_background</item>
+        <item name="android:minWidth">@dimen/app_button_min_width</item>
+        <item name="android:minHeight">@dimen/app_button_min_height</item>
+        <item name="android:paddingStart">@dimen/app_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/app_button_horizontal_padding</item>
+        <item name="android:textSize">@dimen/app_button_text_size</item>
+        <item name="android:textColor">@color/app_text_inverted_color</item>
+    </style>
+
+</resources>

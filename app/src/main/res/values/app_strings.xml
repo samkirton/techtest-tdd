@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WorldPay</string>
+    <string name="app_config_api_url">https://access.worldpay.com/</string>
+</resources>

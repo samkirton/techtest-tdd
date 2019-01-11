@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_button_background_selected">#55FFFFFF</color>
+    <color name="app_button_border">@color/colorAccent</color>
+    <color name="app_button_background">@color/colorAccent</color>
+</resources>

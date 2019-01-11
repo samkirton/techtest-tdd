@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D5370</color>
+    <color name="colorPrimaryDark">#153B50</color>
+    <color name="colorAccent">#DB5461</color>
+    <color name="drawable_mask">#FFFFFF</color>
+    <color name="app_text_inverted_color">#FFFFFF</color>
+</resources>
