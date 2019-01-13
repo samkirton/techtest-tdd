@@ -7,6 +7,7 @@ import com.worldpay.techtest.app.authorize.model.ItemDetails
 
 data class AuthorizeViewState(
     val view: View,
+    val itemDetails: ItemDetails? = null,
     val cardDetails: CardDetails? = null,
     val addressDetails: AddressDetails? = null
 ) : MxViewState {
@@ -16,7 +17,7 @@ data class AuthorizeViewState(
         data class ShowItemDetails(val itemDetails: ItemDetails) : View()
         object ShowCardDetailsForm : View()
         object ShowAddressDetailsForm : View()
-        object ShowConfirmPayment : View()
+        object ShowConfirmPayment: View()
         object OnPaymentInProgress : View()
         object OnPaymentError : View()
         object OnPaymentSuccess : View()

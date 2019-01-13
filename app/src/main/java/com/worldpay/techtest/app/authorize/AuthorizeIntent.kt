@@ -13,5 +13,9 @@ sealed class AuthorizeIntent : MxViewIntent {
     object SelectCardDetailsCta : AuthorizeIntent()
     data class EnterAddressDetails(val addressDetails: AddressDetails) : AuthorizeIntent()
     object SelectAddressDetailsCta : AuthorizeIntent()
-    object SelectPayNow : AuthorizeIntent()
+    data class SelectPayNow(
+        val itemDetails: ItemDetails,
+        val cardDetails: CardDetails,
+        val addressDetails: AddressDetails
+    ) : AuthorizeIntent()
 }

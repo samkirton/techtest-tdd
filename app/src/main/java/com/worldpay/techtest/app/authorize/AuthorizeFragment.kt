@@ -34,7 +34,7 @@ class AuthorizeFragment
 
     override fun intents(): Observable<AuthorizeIntent> = Observable.just(
         AuthorizeIntent.Init(ItemDetails(
-            "", "", ItemDetails.Price("", 0.0)))
+            "", "", "", ItemDetails.Price("", 0.0)))
     )
 
     override fun layout(): AuthorizeViewLayout = this
