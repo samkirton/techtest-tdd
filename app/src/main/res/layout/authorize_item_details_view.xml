@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/authorize_item_details_price_label"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
+    <com.worldpay.techtest.uikit.AppButton
         android:id="@+id/authorize_item_details_cta"
         style="@style/AppButton"
         android:layout_width="wrap_content"
@@ -51,6 +51,5 @@
         android:text="@string/authorize_item_details_cta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/authorize_item_details_description_label"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

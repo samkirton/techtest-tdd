@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="authorize_debit_card_max_length">16</integer>
+    <integer name="authorize_card_expiry_max_length">4</integer>
+    <integer name="authorize_cvc_max_length">3</integer>
 </resources>

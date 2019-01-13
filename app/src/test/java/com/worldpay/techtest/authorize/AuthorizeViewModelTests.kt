@@ -41,8 +41,12 @@ class AuthorizeViewModelTests : Spek({
 
             it ("should show the item details") {
                 assertEquals(
-                    AuthorizeViewState.View.ShowItemDetails(itemDetails),
+                    AuthorizeViewState.View.ShowItemDetails,
                     states.first().view
+                )
+                assertEquals(
+                    itemDetails,
+                    states.first().itemDetails
                 )
             }
         }
@@ -144,7 +148,6 @@ class AuthorizeViewModelTests : Spek({
                 "321",
                 "VISA",
                 "1029319293219341",
-                "SJ KIRTON",
                 CardDetails.Expiry(3, 2022))
 
             val addressDetails = AddressDetails(
@@ -200,7 +203,6 @@ class AuthorizeViewModelTests : Spek({
                 "321",
                 "VISA",
                 "1029319293219341",
-                "SJ KIRTON",
                 CardDetails.Expiry(3, 2022))
 
             val addressDetails = AddressDetails(

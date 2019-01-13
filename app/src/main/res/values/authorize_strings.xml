@@ -1,5 +1,7 @@
 <resources>
+    <string name="authorize_item_details_price">%1$s %2$s</string>
     <string name="authorize_item_details_cta">Buy now</string>
+
     <string name="authorize_card_details_card_number">Card number</string>
     <string name="authorize_card_details_card_holder_name">Card Holder Name</string>
     <string name="authorize_card_details_expiry">Expiry</string>
@@ -17,4 +19,5 @@
     <string name="authorize_confirm_payment_cta">Confirm and pay</string>
     <string name="authorize_confirm_payment_dialog_body_success">Payment successful</string>
     <string name="authorize_confirm_payment_dialog_body_failed">Payment failed</string>
+
 </resources>

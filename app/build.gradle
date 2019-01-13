@@ -28,6 +28,9 @@ android {
             dimension "api"
         }
     }
+    androidExtensions {
+        experimental = true
+    }
 }
 
 dependencies {

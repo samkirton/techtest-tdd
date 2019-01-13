@@ -24,7 +24,9 @@ class AuthorizeViewRendererTests : Spek({
 
             val itemDetails = mock<ItemDetails>()
 
-            renderer.layout(layout, AuthorizeViewState(view = AuthorizeViewState.View.ShowItemDetails(itemDetails)))
+            renderer.layout(layout, AuthorizeViewState(
+                view = AuthorizeViewState.View.ShowItemDetails,
+                itemDetails = itemDetails))
 
             it("layout.showPaymentProgress") {
                 verify(layout).showItemDetails(itemDetails)
@@ -57,10 +59,14 @@ class AuthorizeViewRendererTests : Spek({
             val layout: AuthorizeViewLayout = mock()
             val renderer = AuthorizeViewRenderer()
 
-            renderer.layout(layout, AuthorizeViewState(view = AuthorizeViewState.View.ShowConfirmPayment))
+            val itemDetails = mock<ItemDetails>()
+
+            renderer.layout(layout, AuthorizeViewState(
+                view = AuthorizeViewState.View.ShowConfirmPayment,
+                itemDetails = itemDetails))
 
             it("layout.showConfirmPaymentForm") {
-                verify(layout).showConfirmPaymentForm()
+                verify(layout).showConfirmPaymentForm(itemDetails)
             }
         }
 

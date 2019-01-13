@@ -45,7 +45,7 @@ class AuthorizeViewModel @Inject internal constructor(
         AuthorizeRenderAction.Idle -> previousState.copy(
             view = AuthorizeViewState.View.Idle)
         is AuthorizeRenderAction.ShowItemDetails -> previousState.copy(
-            view = AuthorizeViewState.View.ShowItemDetails(renderAction.itemDetails),
+            view = AuthorizeViewState.View.ShowItemDetails,
             itemDetails = renderAction.itemDetails)
         is AuthorizeRenderAction.ShowCardDetailsForm -> previousState.copy(
             view = AuthorizeViewState.View.ShowCardDetailsForm,

@@ -8,7 +8,7 @@ class AuthorizeViewRenderer @Inject internal constructor() : MxViewRenderer<Auth
         AuthorizeViewState.View.Idle -> {
         }
         is AuthorizeViewState.View.ShowItemDetails -> {
-            layout.showItemDetails(state.view.itemDetails)
+            layout.showItemDetails(state.itemDetails!!)
         }
         AuthorizeViewState.View.ShowCardDetailsForm -> {
             layout.showEnterCardDetailsForm()
@@ -16,8 +16,8 @@ class AuthorizeViewRenderer @Inject internal constructor() : MxViewRenderer<Auth
         AuthorizeViewState.View.ShowAddressDetailsForm -> {
             layout.showEnterAddressDetailsForm()
         }
-        AuthorizeViewState.View.ShowConfirmPayment -> {
-            layout.showConfirmPaymentForm()
+        is AuthorizeViewState.View.ShowConfirmPayment -> {
+            layout.showConfirmPaymentForm(state.itemDetails!!)
         }
         AuthorizeViewState.View.OnPaymentInProgress -> {
             layout.showPaymentProgress()

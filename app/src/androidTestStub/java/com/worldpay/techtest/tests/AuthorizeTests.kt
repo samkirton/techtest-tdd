@@ -70,7 +70,7 @@ class AuthorizeTests {
 
         addressDetailsRobot
             .enterAddress1("94 Redwood Road")
-            .enterAddress2("94 Redwood Road")
+            .enterAddress2("Redwood Industrial Estate")
             .enterCounty("Hertfordshire")
             .enterPostCode("AP18CB")
             .enterCountryCode("GBP")

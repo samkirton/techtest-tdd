@@ -7,7 +7,7 @@ interface AuthorizeViewLayout : MxViewLayout {
     fun showItemDetails(itemDetails: ItemDetails)
     fun showEnterCardDetailsForm()
     fun showEnterAddressDetailsForm()
-    fun showConfirmPaymentForm()
+    fun showConfirmPaymentForm(itemDetails: ItemDetails)
     fun showPaymentProgress()
     fun showPaymentError()
     fun showPaymentSuccess()

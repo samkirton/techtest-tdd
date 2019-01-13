@@ -14,7 +14,7 @@ data class AuthorizeViewState(
 
     sealed class View {
         object Idle : View()
-        data class ShowItemDetails(val itemDetails: ItemDetails) : View()
+        object ShowItemDetails : View()
         object ShowCardDetailsForm : View()
         object ShowAddressDetailsForm : View()
         object ShowConfirmPayment: View()
