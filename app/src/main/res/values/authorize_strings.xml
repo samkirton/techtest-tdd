@@ -1,0 +1,20 @@
+<resources>
+    <string name="authorize_item_details_cta">Buy now</string>
+    <string name="authorize_card_details_card_number">Card number</string>
+    <string name="authorize_card_details_card_holder_name">Card Holder Name</string>
+    <string name="authorize_card_details_expiry">Expiry</string>
+    <string name="authorize_card_details_cvc">CVC</string>
+    <string name="authorize_card_details_cta">Next</string>
+
+    <string name="authorize_address_details_address1">Address Line 1</string>
+    <string name="authorize_address_details_address2">Address Line 2</string>
+    <string name="authorize_address_details_county">County</string>
+    <string name="authorize_address_details_postCode">Post code</string>
+    <string name="authorize_address_details_countryCode">Country code</string>
+    <string name="authorize_address_details_cta">Next</string>
+
+    <string name="authorize_confirm_payment_order_total">Order total</string>
+    <string name="authorize_confirm_payment_cta">Confirm and pay</string>
+    <string name="authorize_confirm_payment_dialog_body_success">Payment successful</string>
+    <string name="authorize_confirm_payment_dialog_body_failed">Payment failed</string>
+</resources>

@@ -32,6 +32,7 @@ class AuthorizeViewModel @Inject internal constructor(
         is AuthorizeRenderAction.ShowItemDetails -> previousState.copy(view = AuthorizeViewState.View.Idle)
         AuthorizeRenderAction.ShowCardDetailsForm -> previousState.copy(view = AuthorizeViewState.View.Idle)
         AuthorizeRenderAction.ShowAddressDetailsForm -> previousState.copy(view = AuthorizeViewState.View.Idle)
+        AuthorizeRenderAction.ShowConfirmPayment -> previousState.copy(view = AuthorizeViewState.View.Idle)
         AuthorizeRenderAction.OnPaymentInProgress -> previousState.copy(view = AuthorizeViewState.View.Idle)
         AuthorizeRenderAction.OnPaymentError -> previousState.copy(view = AuthorizeViewState.View.Idle)
         AuthorizeRenderAction.OnPaymentSuccess -> previousState.copy(view = AuthorizeViewState.View.Idle)

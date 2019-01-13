@@ -8,6 +8,7 @@ sealed class AuthorizeRenderAction : MxRenderAction {
     data class ShowItemDetails(val itemDetails: ItemDetails) : AuthorizeRenderAction()
     object ShowCardDetailsForm : AuthorizeRenderAction()
     object ShowAddressDetailsForm : AuthorizeRenderAction()
+    object ShowConfirmPayment : AuthorizeRenderAction()
     object OnPaymentInProgress : AuthorizeRenderAction()
     object OnPaymentError : AuthorizeRenderAction()
     object OnPaymentSuccess : AuthorizeRenderAction()
